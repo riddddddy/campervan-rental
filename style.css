@@ -1,0 +1,503 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+
+/* NAVBAR........................................................................... */
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navbar-brand div{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-pills a{
+    font-size: 18px;
+    color: black;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:670px) {
+    .right{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        left: 0px;
+        background-color: rgb(0,0,0,0.6);
+        height: 350px;
+        display: none;
+        
+    }
+
+    .right ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        row-gap: 20px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .active.right{
+        display: block;
+    }
+
+    .right li{
+        background-color: white;
+        border-radius: 10px;
+        width: 100px;
+        text-align: center;
+    }
+}
+
+
+/* end of NAVBAR............................................................................... */
+/* HERO................................................................................................ */
+.background-fill{
+    background-image: url(campervan-background.jpg);  
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 0% 90%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.background-fill h1{
+    color: white;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.background-fill h4{
+    color: rgb(241, 191, 191);
+    font-weight: 400;
+}
+
+.background-fill h2{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.background-fill button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    /* margin: 20px auto 0 auto; */
+    display: block;
+    font-weight: 600;
+    color: white;
+    background-color:rgb(38, 0, 255) ;
+    margin-top: 50px;
+    border: none;
+}
+
+.background-fill div{
+    display: inline-block;
+    margin-top: 35vh;
+    margin-left: 100px;
+}
+
+.background-fill a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ............................................................................................ */
+/* Feautures */
+
+.carousel-size{
+    width: 50%;
+    
+}
+
+.carousel-item img{
+    border-radius: 20px;
+}
+
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-wall h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-wall{
+    background-color: rgba(76, 204, 236, 0.6);
+    padding: 80px 30px;
+}
+
+/* ........................................................................................ */
+/* promotion */
+
+.promotion{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(pexels-tyler-lastovich-1022479.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.promotion h1{
+    color:white;
+    background-color: green;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+}
+
+.promotion h2{
+    margin-bottom: 20px;
+}
+
+/* ................................................................................ */
+
+/* Pricing */
+
+
+
+
+.pricing{
+    
+    padding: 100px 40px;
+    cursor: default;
+}
+
+.pricing h1{
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    row-gap: 50px;
+    margin-bottom: 40px;
+}
+
+.card-dimension{
+    width: 60%;
+    font-size: 22px;
+}
+
+
+
+.card-body{
+    background-color: rgba(214, 214, 214, 0.6);
+
+}
+
+
+.button-section{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-section p{
+    text-align: center;
+    margin: 0;
+}
+
+.pickup h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.pickup-section{
+    width: 80%;
+    background-image: url(pexels-tyler-lastovich-808467.jpg);
+    background-size: cover;
+    background-position: 0% 20%;
+    height: 70vh;
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    column-gap: 20px;
+
+    
+}
+
+.input-section{
+    display: inline;
+    position: relative;
+}
+
+.input-section input{
+    width: 200px;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.suggestion-1{
+    background-color: white;
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    padding: 3px;
+    z-index: 100;
+    display: none;
+}
+
+.active.suggestion-1{
+    display: block;
+    text-align: left;
+}
+
+.active.suggestion-2{
+    display: block;
+    text-align: left;
+
+}
+
+.suggestion-2{
+    background-color: white;
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    padding: 3px;
+    z-index: 99;
+    display: none;
+}
+
+.suggestion-1 li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.suggestion-2 li{
+    list-style: none;
+    cursor: pointer;
+}
+.pickup label{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+@media screen and (max-width:937px) {
+    .pickup-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .pickup-section label{
+        width: 150px;
+        font-size: 17px;
+        text-align: right;
+    }
+
+    .input-section input{
+        width: 150px;
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    .pickup-section-1{
+        text-align: center;
+    }
+
+    .pickup-section-2{
+        text-align: center;
+    }
+
+    .pickup-section label{
+        width: 150px;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .pricing h1{
+        text-underline-offset: 4px;
+        font-size: 20px;
+    }
+
+    .pricing-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card-dimension{
+        width: 75%;
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* FAQS */
+.plus{
+    font-size: 23px;
+}
+
+.minus{
+    font-size: 23px;
+    display: none;
+}
+
+.question-container{
+    width: 90vw;
+    background-color: rgba(214, 214, 214, 0.6); 
+    margin:70px auto 0 auto;
+    padding: 15px 20px;
+}
+
+.question-title{
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.question-button{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.answer{
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding-top: 15px;
+    display: none;
+    font-size: 18px;
+}
+
+.active .answer{
+    display: block;
+}
+
+.active .plus{
+    display: none;
+}
+
+.active .minus{
+    display: block;
+}
+
+.faqs h1{
+    text-align: center;
+}
+
+.faqs{
+    height: fit-content;
+    background-image: url(pexels-ian-helmcke-4007605.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-position: 50% 80%;
+    margin-bottom: 50px;
+    
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* contact */
+
+.contact{
+    background-image: url(pexels-ethan-brooke-16394365.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: 60% 0%;
+    padding-top: 42px;
+
+}
+
+.contact div{
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Footer */
+.company{
+	margin-left: 20px;
+	margin-top: 70px;
+	margin-right: 100px;
+}
+
+.company1{
+	font-family: Arial;
+	font-weight: 900;
+	margin-bottom: 10px;
+
+}
+
+.company2{
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+
+.container2{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 80px;
+}
+
+.facebook-logo{
+	width: 40px;
+	height: 30px;
+	object-fit: cover;
+	margin-right: 18px;
+}
+
+.icon{
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+	
+}
+
+footer{
+    background-color: rgba(214, 214, 214, 0.6);
+}
+
+@media screen and (max-width:640px) {
+    .container2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
